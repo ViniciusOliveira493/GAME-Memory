@@ -1,0 +1,53 @@
+#scnGameOver{
+    background-color: var(--game-over-bg-color);
+    padding: 5px;
+    border-radius: 20px;
+    color: var(--game-over-text-color);
+    height: 98%;
+    overflow-y: auto;
+}
+
+#scnGameOver h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#scnGameOver h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+#scnGameOver .btnGameOver{
+    width: 50%;
+    margin-left: 25%;   
+    margin-top: 5px;
+}
+
+#divRankList{
+    height: 30vw;
+    width: 90%;
+    margin: 15px auto;
+    border: 2px solid #000000;
+}
+
+#txtPlayerName{
+    display: inline-block;
+}
+
+#btnSendScore{
+    display: inline-block;
+}
+
+#sendScore{
+    margin: auto;
+    width: 250px;
+    margin-top: 10px;
+}
+
+@media (max-width:1000px) {
+    #divRankList{
+        height: 20vw;
+    }   
+}
