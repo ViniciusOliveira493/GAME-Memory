@@ -78,13 +78,13 @@ async function translate() {
 
 async function findLanguageFile(lang) {
     await 
-        fetch("../src/lang/"+lang+".json")
+        fetch("./src/lang/"+lang+".json")
             .then(response => response.json())
             .then(json => {
                 state.value.langFile = json;
             })
         .catch(err => {
-            fetch("../src/lang/en-US.json")
+            fetch("./src/lang/en-US.json")
                 .then(response => response.json())
                 .then(json => {
                     state.value.langFile = json;     
