@@ -32,12 +32,9 @@
     border: 2px solid #000000;
 }
 
-#txtPlayerName{
-    display: inline-block;
-}
-
+#txtPlayerName,
 #btnSendScore{
-    display: inline-block;
+    display: none;
 }
 
 #sendScore{
