@@ -77,6 +77,7 @@ async function translate() {
 }
 
 async function findLanguageFile(lang) {
+    /*
     await 
         fetch("./src/lang/"+lang+".json")
             .then(response => response.json())
@@ -90,6 +91,19 @@ async function findLanguageFile(lang) {
                     state.value.langFile = json;     
                 });
         }); 
+    */
+    state.value.langFile = {
+        "menu_inst":"Instruções"
+        ,"menu_inst_1":"Clique nas cartas para ver o que está atrás"
+        ,"menu_inst_2":"Combine os pares"
+        ,"score":"Pontos"
+        ,"time":"Tempo"
+        ,"victory_title":"Vitória"    
+        ,"victory_wrong":"Erros"
+        ,"nextlevel":"próxima fase"
+    }
+
+    
 }
 
 async function loadData() {
